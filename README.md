@@ -1,4 +1,4 @@
-# Retail Analytics Project - Learning Implementation
+# Retail Analytics Project - Azure Implementation
 
 ## Project Overview
 A complete retail analytics solution demonstrating real-world data architecture:
