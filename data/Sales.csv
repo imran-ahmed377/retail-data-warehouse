@@ -1,0 +1,6 @@
+SalesKey,SaleID,CustomerKey,ProductKey,Quantity,TotalAmount
+1,SALE001,1,1,2,1999.98
+2,SALE002,2,2,1,299.99
+3,SALE003,3,3,5,249.95
+4,SALE004,4,4,1,399.99
+5,SALE005,5,5,3,239.97

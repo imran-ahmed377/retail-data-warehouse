@@ -1,0 +1,6 @@
+CustomerKey,CustomerID,CustomerName,City,Region
+1,CUST001,John Smith,Toronto,Ontario
+2,CUST002,Sarah Johnson,Vancouver,British Columbia
+3,CUST003,Michael Chen,Calgary,Alberta
+4,CUST004,Emma Davis,Montreal,Quebec
+5,CUST005,Robert Wilson,Winnipeg,Manitoba

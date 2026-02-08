@@ -1,0 +1,34 @@
+# Sensitive Files
+*.config
+*.credentials
+*.env
+secrets.json
+connection_strings.txt
+azure_creds.txt
+
+# System Files
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node/Python
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+env/
+
+# Azure
+.azure/
+*.pem
+*.key
+
+# Local development
+local.settings.json
+appsettings.Development.json

@@ -1,0 +1,6 @@
+ProductKey,ProductID,ProductName,Category,Price
+1,PROD001,Laptop,Electronics,999.99
+2,PROD002,Office Chair,Furniture,299.99
+3,PROD003,Desk Lamp,Accessories,49.99
+4,PROD004,Monitor,Electronics,399.99
+5,PROD005,Keyboard,Accessories,79.99
