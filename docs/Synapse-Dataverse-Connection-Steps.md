@@ -8,7 +8,7 @@ Before connecting Synapse to Dataverse, ensure:
 - [ ] Synapse workspace is fully deployed
 - [ ] Dedicated SQL pool is created and running
 - [ ] You have Dataverse environment details:
-  - Organization URL: `https://retail-analytics-dev.crm.dynamics.com/`
+  - Organization URL: `https://[your-org].crm.dynamics.com/`
   - Table names: `new_customer`, `new_product`, `new_sales`
 - [ ] SQL admin credentials saved (username: `sqladmin`, password: [yours])
 
@@ -35,17 +35,17 @@ Before connecting Synapse to Dataverse, ensure:
 **Option A: Service Principal (Recommended for Production)**
 ```
 Name: LinkedService_Dataverse_Prod
-Organization URI: https://retail-analytics-dev.crm.dynamics.com/
+Organization URI: https://[your-org].crm.dynamics.com/
 Authentication Type: Service Principal
 Service Principal ID: [Your Azure App Registration ID]
 Service Principal Key: [Your App Secret]
-Tenant ID: 12f933b3-3d61-4b19-9a4d-689021de8cc9
+Tenant ID: [your-tenant-id]
 ```
 
 **Option B: Managed Identity (If available in your Synapse)**
 ```
 Name: LinkedService_Dataverse_Managed
-Organization URI: https://retail-analytics-dev.crm.dynamics.com/
+Organization URI: https://[your-org].crm.dynamics.com/
 Authentication Type: Managed Identity
 ```
 

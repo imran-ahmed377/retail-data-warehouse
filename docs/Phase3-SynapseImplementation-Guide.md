@@ -92,10 +92,10 @@ A connection configuration that allows Synapse to authenticate to external servi
 5. Select **Common Data Service (Dataverse)**
 6. Fill in:
    - **Name:** `LinkedService_Dataverse` (or any name)
-   - **Organization URI:** `https://retail-analytics-dev.crm.dynamics.com/`
+   - **Organization URI:** `https://[your-org].crm.dynamics.com/`
    - **Authentication type:** **Service Principal**
    - **Service principal ID:** [Your Azure app registration ID]
-   - **Tenant ID:** `12f933b3-3d61-4b19-9a4d-689021de8cc9`
+   - **Tenant ID:** `[your-tenant-id]`
    - **Service principal key:** [Your service principal secret]
 7. Click **Create**
 
@@ -111,14 +111,14 @@ $linkedServiceBody = @{
         "type" = "CommonDataServiceForApps"
         "typeProperties" = @{
             "deploymentType" = "Online"
-            "organizationUri" = "https://retail-analytics-dev.crm.dynamics.com/"
+            "organizationUri" = "https://[your-org].crm.dynamics.com/"
             "authenticationType" = "ServicePrincipal"
             "servicePrincipalId" = "[your-service-principal-id]"
             "servicePrincipalCredential" = @{
                 "type" = "SecureString"
                 "value" = "[your-service-principal-secret]"
             }
-            "tenantId" = "12f933b3-3d61-4b19-9a4d-689021de8cc9"
+            "tenantId" = "[your-tenant-id]"
         }
     }
 }

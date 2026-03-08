@@ -158,9 +158,9 @@ PHASE 4: VISUALIZATION (NOT YET STARTED)
 ### PHASE 1: Set Up Azure Environment (COMPLETED ✅)
 
 #### Step 1.1: Create Azure Subscription
-- Created free trial: Azure for Students (provided by University of Windsor)
-- Subscription ID: `cbcbc57d-0c75-47a0-b4ce-3f8ea945bad8`
-- Tenant: `12f933b3-3d61-4b19-9a4d-689021de8cc9`
+- Created free trial: Azure for Students
+- Subscription ID: `[your-subscription-id]`
+- Tenant: `[your-tenant-id]`
 
 #### Step 1.2: Create Resource Group
 - Resource Group: `rg-retail-analytics-dev`
@@ -243,7 +243,7 @@ SALE005 | CUST005 | PROD005 | 3 units | $239.97
 **Configuration:**
 - Name: `syn-retail-analytics-dev`
 - Region: Central Canada
-- Storage Account: Auto-created (`stretailanalyticsdev1`)
+- Storage Account: Auto-created (`[your-storage-account]`)
 
 **Result:** Empty analytics environment ready to receive data
 
@@ -332,9 +332,9 @@ Sales.csv     → 5 sales records
 **Location:** Azure Blob Storage container `dataverse-exports`
 
 **URLs:**
-- https://stretailanalyticsdev1.blob.core.windows.net/dataverse-exports/Customer.csv
-- https://stretailanalyticsdev1.blob.core.windows.net/dataverse-exports/Product.csv
-- https://stretailanalyticsdev1.blob.core.windows.net/dataverse-exports/Sales.csv
+- https://[your-storage-account].blob.core.windows.net/dataverse-exports/Customer.csv
+- https://[your-storage-account].blob.core.windows.net/dataverse-exports/Product.csv
+- https://[your-storage-account].blob.core.windows.net/dataverse-exports/Sales.csv
 
 **Why intermediate storage?**
 - Synapse can't directly connect to Dataverse due to MFA limitations
@@ -346,7 +346,7 @@ Sales.csv     → 5 sales records
 
 ```sql
 COPY INTO DimCustomer
-FROM 'https://stretailanalyticsdev1.blob.core.windows.net/dataverse-exports/Customer.csv'
+FROM 'https://[your-storage-account].blob.core.windows.net/dataverse-exports/Customer.csv'
 WITH (FILE_TYPE = 'CSV', FIRSTROW = 2, FIELDTERMINATOR = ',', ROWTERMINATOR = '\n')
 ```
 
@@ -364,7 +364,7 @@ Get Data
   ↓
 Azure Synapse
   ↓
-Server: syn-retail-analytics-dev.sql.azuresynapse.net
+Server: [your-synapse-workspace].sql.azuresynapse.net
 Database: SalesPool
 ```
 
@@ -386,7 +386,7 @@ Database: SalesPool
 
 ### File Structure
 ```
-c:\Users\Asus\Desktop\Skills Upgrade\MS Dataverse\
+[your-project-folder]/
 ├── PROJECT_DOCUMENTATION.md        ← You are here
 ├── scripts/
 │   ├── BasicSetup.sql              ← Creates tables, inserts data
@@ -404,9 +404,9 @@ c:\Users\Asus\Desktop\Skills Upgrade\MS Dataverse\
 | Resource | Name | Status | Cost |
 |----------|------|--------|------|
 | Resource Group | rg-retail-analytics-dev | Active | Free |
-| Synapse Workspace | syn-retail-analytics-dev | Disabled* | $0.52/hour |
+| Synapse Workspace | [your-synapse-workspace] | Disabled* | $0.52/hour |
 | Dedicated SQL Pool | SalesPool (DW100c) | Disabled* | Included |
-| Storage Account | stretailanalyticsdev1 | Disabled* | $0.02/GB |
+| Storage Account | [your-storage-account] | Disabled* | $0.02/GB |
 | Dataverse Environment | retail-analytics-dev | Active | Included |
 
 *Currently disabled due to Azure subscription expiration
@@ -516,7 +516,7 @@ Each layer has a specific job and different technology fits each job best.
 5. Services automatically resume within minutes
 
 #### Step 2: Load CSV Data into Synapse
-1. Open Synapse Studio (syn-retail-analytics-dev)
+1. Open Synapse Studio ([your-synapse-workspace])
 2. Go to "Develop" → "SQL scripts"
 3. Open or paste: `SynapseCopyFromCSV.sql`
 4. Select "SalesPool" database
@@ -526,7 +526,7 @@ Each layer has a specific job and different technology fits each job best.
 #### Step 3: Build Power BI Dashboard
 1. Download Power BI Desktop (free)
 2. Connect to Synapse:
-   - Server: `syn-retail-analytics-dev.sql.azuresynapse.net`
+   - Server: `[your-synapse-workspace].sql.azuresynapse.net`
    - Database: `SalesPool`
 3. Import tables: DimCustomer, DimProduct, FactSales
 4. Create relationships on foreign keys

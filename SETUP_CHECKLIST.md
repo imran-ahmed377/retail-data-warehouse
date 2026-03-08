@@ -7,7 +7,7 @@ Complete this checklist to finalize your foundation. Check off each item as you 
 - [ ] **Subscription Verified**
   - Logged into Azure Portal
   - Confirmed subscription: `Azure for Students`
-  - Subscription ID: cbcbc57d-0c75-47a0-b4ce-3f8ea945bad8
+  - Subscription ID: [your-subscription-id]
   - Role: Owner
   - Credit balance checked
 
