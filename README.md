@@ -27,8 +27,7 @@ MS Dataverse/
 ## Key Resources
 
 **Subscription Details:**
-- Subscription ID: cbcbc57d-0c75-47a0-b4ce-3f8ea945bad8
-- Directory: University of Windsor (uwindsor.ca)
+- Subscription ID: [your-subscription-id]
 - Region Preference: East US
 - Role: Owner
 
@@ -44,7 +43,7 @@ MS Dataverse/
 | Resource Group | rg-{project}-{env} | rg-retail-analytics-dev |
 | Synapse Workspace | syn-{project}-{env} | syn-retail-analytics-dev |
 | SQL Pool | pool-{project}-{env} | pool-retail-analytics-dev |
-| Storage Account | st{project}{env}{random} | stretailanalyticsdev1 |
+| Storage Account | st{project}{env}{random} | stretaildev001 |
 | Dataverse Env | {project}-{env} | retail-analytics-dev |
 
 ## Learning Objectives

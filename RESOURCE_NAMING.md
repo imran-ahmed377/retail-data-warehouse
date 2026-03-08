@@ -34,7 +34,7 @@ Consistent naming prevents confusion, enables cost tracking, and scales across t
 
 | Resource | Pattern | Example | Notes |
 |---|---|---|---|
-| Storage Account | `st{project}{env}{seq}` | `stretailanalyticsdev1` | No hyphens; globally unique |
+| Storage Account | `st{project}{env}{seq}` | `stretaildev001` | No hyphens; globally unique |
 | Container | `{purpose}-{env}-data` | `raw-dev-data` | Describes data stage |
 | File Share | `fs-{purpose}-{env}` | `fs-config-dev` | For shared configuration |
 
@@ -68,7 +68,7 @@ CreatedDate: YYYY-MM-DD
 ```
 Environment: dev
 Project: retail-analytics
-Owner: student@uwindsor.ca
+Owner: your-email@example.com
 CostCenter: learning
 ```
 
