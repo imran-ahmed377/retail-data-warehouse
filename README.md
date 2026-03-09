@@ -24,27 +24,7 @@ MS Dataverse/
 └── README.md              # This file
 ```
 
-## Key Resources
 
-**Subscription Details:**
-- Subscription ID: [your-subscription-id]
-- Region Preference: East US
-- Role: Owner
-
-**Resource Group:**
-- Name: rg-retail-analytics-dev
-- Region: Central Canada
-- Status: ✅ Created & Active
-
-## Naming Conventions
-
-| Resource Type | Pattern | Example |
-|---|---|---|
-| Resource Group | rg-{project}-{env} | rg-retail-analytics-dev |
-| Synapse Workspace | syn-{project}-{env} | syn-retail-analytics-dev |
-| SQL Pool | pool-{project}-{env} | pool-retail-analytics-dev |
-| Storage Account | st{project}{env}{random} | stretaildev001 |
-| Dataverse Env | {project}-{env} | retail-analytics-dev |
 
 ## Learning Objectives
 
