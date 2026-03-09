@@ -57,11 +57,7 @@ MS Dataverse/
 - Design analytics visualizations
 - Understand measure vs dimension
 
-## Next Steps
-1. ✅ Verify Azure student account
-2. ⏳ Create resource group in Azure Portal
-3. ⏳ Set up local development environment (Azure CLI, extensions)
-4. ⏳ Verify everything is ready for Phase 2
+
 
 ---
 
